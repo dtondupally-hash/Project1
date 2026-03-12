@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chocolate Shop - Contact</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5dc;
+}
+
+header{
+background:#8b4513;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.contact{
+display:flex;
+justify-content:center;
+padding:60px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:300px;
+}
+
+input, textarea{
+margin:10px 0;
+padding:10px;
+}
+
+button{
+padding:10px;
+background:chocolate;
+color:white;
+border:none;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Contact Us</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="contact">
+
+<form onsubmit="return submitForm()">
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+<script>
+function submitForm(){
+alert("Thank you! We will contact you soon.");
+return false;
+}
+</script>
+
+</body>
+</html>

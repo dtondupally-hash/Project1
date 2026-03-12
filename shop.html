@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chocolate Shop - Products</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#fff8dc;
+}
+
+header{
+background:#6b3e26;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+text-align:center;
+width:200px;
+}
+
+button{
+padding:8px 15px;
+background:chocolate;
+color:white;
+border:none;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Our Chocolates</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="products">
+
+<div class="card">
+<h3>Dark Chocolate</h3>
+<p>Price: ₹200</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+<div class="card">
+<h3>Milk Chocolate</h3>
+<p>Price: ₹150</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+<div class="card">
+<h3>White Chocolate</h3>
+<p>Price: ₹180</p>
+<button onclick="buy()">Buy</button>
+</div>
+
+</section>
+
+<script>
+function buy(){
+alert("Chocolate added to cart!");
+}
+</script>
+
+</body>
+</html>
